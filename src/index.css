@@ -136,7 +136,18 @@ img {
   text-decoration-line: underline;
 }
 
+/*max-width quiere decir que a esa medida se vuelve ya en columna*/
+/*para poder ver la app desde un móvil*/
+@media (max-width: 675px) {
+  .card-content {
+    flex-direction: column;
+  }
 
+  .card--info {
+    padding-top: 8px;
+  }
+ 
+}
 
 
   
