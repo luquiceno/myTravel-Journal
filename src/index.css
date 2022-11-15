@@ -35,12 +35,11 @@ img {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 
 .card-content {
@@ -48,7 +47,12 @@ img {
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #e9e9e9;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+
+.card-content:last-child {
+  border-bottom: none;
 }
 
 .box--image {
@@ -136,8 +140,9 @@ img {
   text-decoration-line: underline;
 }
 
-/*max-width quiere decir que a esa medida se vuelve ya en columna*/
-/*para poder ver la app desde un móvil*/
+/*max-width quiere decir que cuando width sea 675 o menos*/
+/*el contenido de card content se ajusta a columnas para
+/*poder ser visualizado desde un móvil*/
 @media (max-width: 675px) {
   .card-content {
     flex-direction: column;

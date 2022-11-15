@@ -5,7 +5,6 @@ import './App.css'
 import data from './data'
 
 function App() {
-  
   const cards = data.map(item => {
     return (
       <Card 
@@ -17,9 +16,11 @@ function App() {
 
   return (
     <div>
-     <Navbar />
-     {cards}
-     <Footer />
+      <Navbar />
+      <div className="container">
+        {cards}
+      </div>
+      <Footer />
     </div>
   )
 }
